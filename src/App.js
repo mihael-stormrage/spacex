@@ -5,6 +5,7 @@ import Main from './components/Main';
 import Features from './components/Features';
 
 import './style.css';
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Main />
       <Features />
+      <Footer />
     </>
   );
 }
