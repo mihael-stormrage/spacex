@@ -9,17 +9,24 @@ import Features from './components/Features';
 import './style.css';
 import Footer from "./components/Footer";
 
-function App() {
-  return (
-    <>
-      <Header />
-      <Main />
-      <Features />
-      <Footer />
-      {/*<Calendar />*/}
-      {/*<Details />*/}
-    </>
-  );
+class App extends React.Component {
+
+  state = {
+    rocket: 'Falcon 1',
+  };
+
+  render() {
+    return (
+      <>
+        <Header />
+        <Main rocket={this.state.rocket}/>
+        <Features />
+        <Footer />
+        {/*<Calendar />*/}
+        {/*<Details />*/}
+      </>
+    );
+  }
 }
 
 export default App;
