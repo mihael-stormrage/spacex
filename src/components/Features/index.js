@@ -34,7 +34,7 @@ const Features = ({ name, height, diameter, mass, payload_weights: payloadWeight
           <td className="table-column">{mass.kg} kg / {mass.lb} lb</td>
         </tr>
         {payloadWeights.map(item => (
-          <tr key ={item.id}>
+          <tr key={item.id}>
             <td className="table-column">PAYLOAD TO {item.id.toUpperCase()}</td>
             <td className="table-column">{item.kg} kg / {item.lb} lb</td>
           </tr>

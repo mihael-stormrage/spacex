@@ -18,8 +18,8 @@ const Header = (props) => (
                  e.preventDefault();
                  props.changeRocket(item);
                }}
-               className="item-link"
-            >{item}</a>
+               className="item-link">{item}
+            </a>
           </li>
         ))}
       </ul>
@@ -30,7 +30,7 @@ const Header = (props) => (
           <a href="/" className="item-link">Home</a>
         </li>
         <li className="item">
-          <a href="calendar.html" className="item-link">Calendar</a>
+          <a href="/calendar" className="item-link">Calendar</a>
         </li>
       </ul>
     </nav>
